@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Logo = () => {
     return (
         <StyledLink>
-            <StyledImg src={`${logoImg}`} />
+            <StyledImg src={logoImg} />
         </StyledLink>
     );
 };

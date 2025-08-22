@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import {Icon} from "../icon/Icon.tsx";
 
 export const Menu = () => {
     return (
@@ -8,7 +9,7 @@ export const Menu = () => {
                     <a href="">Home</a>
                 </li>
                 <li>
-                    <a href=""><img/>Projects</a>
+                    <a href=""><Icon iconId = "gears"/>Projects</a>
                 </li>
                 <li>
                     <a href="">Contact me</a>
