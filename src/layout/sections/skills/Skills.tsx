@@ -25,10 +25,5 @@ export const Skills = () => {
 };
 
 const StyledSkills = styled.section`
-    min-height: 100vh;
-    min-width: 100vw;
+
 `
-// const Test = styled.div`
-//     display: flex;
-//     justify-content: space-between;
-// `
