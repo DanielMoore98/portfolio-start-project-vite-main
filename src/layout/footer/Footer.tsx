@@ -52,9 +52,10 @@ export const Footer = () => {
 const StyledFooter = styled.footer`
     background: ${theme.colors.secondaryBg};
     background-image: url("${wave}");
+    background-repeat: no-repeat;
+    background-size: cover;
     min-height: 444px;
-    max-width: 1440px;
-    margin: 0 auto;
+    //max-width: 1440px;
     display: flex;
     align-items: center;
 `
