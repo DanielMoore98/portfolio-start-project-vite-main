@@ -1,4 +1,5 @@
 import {createGlobalStyle} from "styled-components";
+import {theme} from "./Theme.ts";
 
 export const GlobalStyles = createGlobalStyle `
     *,
@@ -16,6 +17,7 @@ export const GlobalStyles = createGlobalStyle `
         sans-serif;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
+        background-color: ${theme.colors.secondaryBg};
     }
 
     a {

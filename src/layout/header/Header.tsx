@@ -21,7 +21,7 @@ export const Header = () => {
 const StyledHeader = styled.header`
     box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 2px 1px 0 rgba(0, 0, 0, 0.12), 0 1px 1px 0 rgba(0, 0, 0, 0.14);
     background: #fcfcfc;
-    padding: 24px;
+    padding: 24px 0;
     position:fixed;
     top: 0;
     right: 0;

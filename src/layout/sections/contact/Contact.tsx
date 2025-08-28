@@ -1,14 +1,14 @@
 import styled from "styled-components";
 import {SectionTitle} from "../../../components/SectionTitle.tsx";
 import {FlexWrapper} from "../../../components/FlexWrapper.tsx";
-import img from "../../../assets/images/contact-img.webp"
+import img from "../../../assets/images/svg/contact-img.webp"
 import sendImg from "../../../assets/images/send-msg.webp"
 import {theme} from "../../../styles/Theme.ts";
 import {Container} from "../../../components/Container.ts";
 
 export const Contact = () => {
     return (
-        <StyledContact>
+        <StyledContact id="contact">
             <Container>
                 <SectionTitle>Contact me</SectionTitle>
                 <FlexWrapper justify="space-between">

@@ -11,7 +11,7 @@ import {Container} from "../../../components/Container.ts";
 
 export const Projects = () => {
     return (
-        <StyledProjects>
+        <StyledProjects id={"projects"}>
             <Container>
                 <SectionTitle color={"rgba(255, 255, 255, 0.87)"}>
                     <Icon iconId={"gearsWhite"} width={"28"} height={"23"} viewBox={"0 0 28 22"}/>

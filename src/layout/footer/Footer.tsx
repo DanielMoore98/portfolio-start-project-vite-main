@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import wave from "../../assets/images/wave.svg"
+import wave from "../../assets/images/svg/wave.svg"
 import {Icon} from "../../components/icon/Icon.tsx";
 import {theme} from "../../styles/Theme.ts";
 import {Container} from "../../components/Container.ts";
@@ -53,6 +53,7 @@ const StyledFooter = styled.footer`
     background: ${theme.colors.secondaryBg};
     background-image: url("${wave}");
     background-repeat: no-repeat;
+    background-size: 100% 444px;
     background-size: cover;
     min-height: 444px;
     //max-width: 1440px;

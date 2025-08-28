@@ -1,4 +1,4 @@
-import iconsSprite from '../../assets/images/icon-sprite.svg'
+import iconsSprite from '../../assets/images/svg/icon-sprite.svg'
 
 type IconPropsType = {
     iconId: string
