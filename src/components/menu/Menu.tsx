@@ -36,7 +36,7 @@ const StyledMenu = styled.nav`
             &::before{
                 content: "";
                 position: absolute;
-                display: block;
+                //display: block;
                 width: 22px;
                 height: 23px;
                 background: url("${skills}");
@@ -54,7 +54,7 @@ const StyledMenu = styled.nav`
             &::before{
                 content: "";
                 position: absolute;
-                display: block;
+                //display: block;
                 width: 25px;
                 height: 23px;
                 background: url("${gears}");
@@ -72,7 +72,7 @@ const StyledMenu = styled.nav`
             &::before{
                 content: "";
                 position: absolute;
-                display: block;
+                //display: block;
                 width: 23px;
                 height: 23px;
                 background: url("${contact}");

@@ -1,16 +1,17 @@
-import logoImg from "../../assets/images/logo-img.webp"
+import logoImg from "../../assets/images/danmoore-logo.webp"
 import styled from "styled-components";
 export const Logo = () => {
     return (
-        <StyledLink>
+        <StyledLink href={"#main"}>
             <StyledImg src={logoImg} />
         </StyledLink>
     );
 };
 
 const StyledImg = styled.img`
+    object-fit: contain;
     width: 90px;
-    height: 35px;
+    height: 45px;
 `
 
 const StyledLink = styled.a`

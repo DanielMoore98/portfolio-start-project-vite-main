@@ -7,9 +7,9 @@ import {FlexWrapper} from "../../components/FlexWrapper.tsx";
 export const Footer = () => {
     return (
         <StyledFooter>
-                <Container>
+                <Container padding={"0 110px"}>
                     <FlexWrapper justify="space-between">
-                        <div>
+                        <SocialWrapper>
                             <Text>My social media links:</Text>
                             <SocialList>
                                 <SocialItem>
@@ -33,14 +33,14 @@ export const Footer = () => {
                                     </SocialIconLink>
                                 </SocialItem>
                             </SocialList>
-                        </div>
-                        <div>
+                        </SocialWrapper>
+                        <GitWrapper>
                             <Text>More projects I’ve worked on</Text>
-                            <SocialIconLink>
-                                <Icon height={"30"} width={"30"} viewBox={"0 0 30 30"} iconId={"github"} />
-                                @<BlueHighlight>john-doe</BlueHighlight> on github
+                            <SocialIconLink href={"https://github.com/DanielMoore98"}>
+                                <Icon height={"30"} width={"32"} viewBox={"0 0 30 32"} iconId={"github"} />
+                                @<BlueHighlight>DanielMoore98</BlueHighlight> on github
                             </SocialIconLink>
-                        </div>
+                        </GitWrapper>
                     </FlexWrapper>
                 </Container>
         </StyledFooter>
@@ -61,6 +61,7 @@ const StyledFooter = styled.footer`
     align-items: center;
 `
 
+
 const Text = styled.p`
     font-weight: 500;
     font-size: 20px;
@@ -77,9 +78,36 @@ const SocialItem = styled.li`
 `
 
 const SocialIconLink = styled.a`
-
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    font-size: 18px;
+    color: #fffafa;
+    
 `
 
 const BlueHighlight = styled.span`
     color: #0ACBBF;
+    margin: 0 2px;
+`
+
+const SocialWrapper = styled.div`
+    ${Text} {
+        margin-bottom: 34px;
+
+    }
+`
+const GitWrapper = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    
+    ${Text} {
+        margin-bottom: 19px;
+    }
+    
+    svg {
+        margin-right: 10px;
+    }
 `

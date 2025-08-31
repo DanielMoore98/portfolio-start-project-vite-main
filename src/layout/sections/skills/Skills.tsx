@@ -9,7 +9,7 @@ export const Skills = () => {
     return (
         <StyledSkills id="skills">
             <Container>
-                <SectionTitle marginB={"30px"}>Skills</SectionTitle>
+                <SectionTitle marginb={"30px"}>Skills</SectionTitle>
                 <FlexWrapper justify="space-between" align="center">
                     <FlexWrapper direction="column" gap="40px">
                         <Text>I have a vast experience in the following web technologies:</Text>

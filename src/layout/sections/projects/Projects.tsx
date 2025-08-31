@@ -13,12 +13,12 @@ export const Projects = () => {
     return (
         <StyledProjects id={"projects"}>
             <Container>
-                <SectionTitle color={"rgba(255, 255, 255, 0.87)"}>
+                <SectionTitle color={"rgba(255, 255, 255, 0.87)"} marginb={"8px"}>
                     <Icon iconId={"gearsWhite"} width={"28"} height={"23"} viewBox={"0 0 28 22"}/>
                     Projects
                 </SectionTitle>
                 <Text>A select number of projects</Text>
-                <FlexWrapper justify={"space-around"}>
+                <FlexWrapper justify={"space-around"} align={"flex-start"}>
                     <Project text={"Made a social media manager template using HTML 5, CSS and JS."}
                              src={img1}/>
                     <Project text={"Made a simple card page using HTML 5 and  CSS 3"}
@@ -33,10 +33,13 @@ export const Projects = () => {
 
 const StyledProjects = styled.section`
     background-color: ${theme.colors.tertiaryBg};
+    padding: 30px 0 40px;
 `
+
 const Text = styled.p`
     text-align: center;
     font-weight: 400;
     font-size: 18px;
     color: rgba(255, 255, 255, 0.87);
+    margin-bottom: 24px;
 `

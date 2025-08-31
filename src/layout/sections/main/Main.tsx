@@ -1,5 +1,5 @@
 
-import mainImg from "../../../assets/images/sample-user-1-_1_.webp"
+import mainImg from "../../../assets/images/danmoore-main-img.webp"
 import styled from "styled-components";
 import {FlexWrapper} from "../../../components/FlexWrapper.tsx";
 import {theme} from "../../../styles/Theme.ts";
@@ -13,13 +13,13 @@ import circles from "../../../assets/images/svg/circles.svg"
 
 export const Main = () => {
     return (
-        <StyledMain>
+        <StyledMain id="main">
             <Container>
                 <FlexWrapper justify="space-between" align="center">
                     <Group>
                         <SmallText>Hi👋, I’m a</SmallText>
                         <Title>software developer</Title>
-                        <Text>I’m <Bold>John Doe</Bold>, a developer dedicated to making the world a better place
+                        <Text>I’m <Bold>Daniel Moore</Bold>, a developer dedicated to making the world a better place
                             one line of code at a time.</Text>
                         <Link href={'#contact'}>Hire me</Link>
                     </Group>
@@ -92,8 +92,9 @@ const Link = styled.a`
 
 const Photo = styled.img`
     object-fit: cover;
-    width: 343px;
-    height: 389px;
+    object-position: right;
+    width: 345px;
+    height: 390px;
 `
 
 const ImageGroupWrapper = styled.div`
@@ -166,7 +167,6 @@ const Circles = styled.div`
         height: 76px;
         left: 245px;
         top:-30px;
-        
         
     }
 `
