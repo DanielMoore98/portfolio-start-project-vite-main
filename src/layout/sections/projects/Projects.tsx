@@ -18,7 +18,7 @@ export const Projects = () => {
                     Projects
                 </SectionTitle>
                 <Text>A select number of projects</Text>
-                <FlexWrapper justify={"space-around"} align={"flex-start"}>
+                <FlexWrapper justify={"space-around"} align={"flex-start"} wrap={"wrap"}>
                     <Project text={"Made a social media manager template using HTML 5, CSS and JS."}
                              src={img1}/>
                     <Project text={"Made a simple card page using HTML 5 and  CSS 3"}

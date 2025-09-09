@@ -6,5 +6,10 @@ export const theme = {
         font: 'rgba(255, 255, 255, 0.87)',
         headerFont: '#000',
         titleColor: '#e84949'
+    },
+
+    media: {
+        tablet: "screen and (max-width: 768px)",
+        mobile: "screen and (max-width: 576px)"
     }
 }

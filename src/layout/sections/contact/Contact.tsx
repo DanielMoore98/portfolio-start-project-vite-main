@@ -11,7 +11,7 @@ export const Contact = () => {
         <StyledContact id="contact">
             <Container>
                 <SectionTitle>Contact me</SectionTitle>
-                <FlexWrapper justify="space-between" align={"center"}>
+                <FlexWrapper justify="space-between" align={"center"} wrap={"wrap"}>
                     <Photo src={img}></Photo>
                     <StyledForm>
                         <Field placeholder={"Enter email address"}/>
@@ -35,6 +35,8 @@ const StyledContact = styled.section`
 `
 const Photo = styled.img`
     object-fit: cover;
+    max-width: 562px;
+    height: auto;
 `
 
 const StyledForm = styled.form`
@@ -85,6 +87,7 @@ const StyledButton = styled.button`
 
     &:hover {
         text-align: left;
+        cursor: pointer;
 
         &:after {
             content: '';

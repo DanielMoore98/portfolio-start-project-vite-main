@@ -83,7 +83,9 @@ const StyledMenu = styled.nav`
         
     }
 
-    
+    @media ${theme.media.mobile} {
+        display: none;
+    }
 
 `
 

@@ -8,7 +8,7 @@ export const Footer = () => {
     return (
         <StyledFooter>
                 <Container padding={"0 110px"}>
-                    <FlexWrapper justify="space-between">
+                    <FlexWrapper justify="space-between" wrap={"wrap"} align={"center"}>
                         <SocialWrapper>
                             <Text>My social media links:</Text>
                             <SocialList>
@@ -53,12 +53,32 @@ const StyledFooter = styled.footer`
     background: ${theme.colors.secondaryBg};
     background-image: url("${wave}");
     background-repeat: no-repeat;
-    background-size: 100% 444px;
     background-size: cover;
-    min-height: 444px;
-    //max-width: 1440px;
-    display: flex;
-    align-items: center;
+    height: 444px;
+    
+    ${Container} {
+        display: flex;
+        align-items: center;
+    }
+    
+    ${FlexWrapper} {
+        width: 100%;
+    }
+    
+    @media ${theme.media.mobile} {
+        align-items: center;
+        height: 400px;
+        ${Container} {
+            padding: 0 15px;
+            height: 350px;
+            
+        }
+        
+        ${FlexWrapper} {
+            height: unset;
+        }
+    }
+    
 `
 
 
@@ -66,11 +86,15 @@ const Text = styled.p`
     font-weight: 500;
     font-size: 20px;
     color: #fff;
+    text-align: left;
 `
 
 const SocialList = styled.ul`
     display: flex;
     gap: 65px;
+    @media ${theme.media.mobile} {
+        gap: 57px;
+    }
 `
 
 const SocialItem = styled.li`
@@ -94,8 +118,9 @@ const BlueHighlight = styled.span`
 const SocialWrapper = styled.div`
     ${Text} {
         margin-bottom: 34px;
-
     }
+    
+    
 `
 const GitWrapper = styled.div`
     display: flex;
