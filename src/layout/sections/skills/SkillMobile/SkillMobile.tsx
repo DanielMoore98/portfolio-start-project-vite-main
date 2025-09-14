@@ -11,7 +11,7 @@ type SkillPropsType = {
     width?: string
 }
 
-export const Skill = (props:SkillPropsType) => {
+export const SkillMobile = (props:SkillPropsType) => {
     return (
         <StyledSkill>
             <IconWrapper>
@@ -23,9 +23,9 @@ export const Skill = (props:SkillPropsType) => {
 };
 
 const StyledSkill = styled.div`
-    
+    display: none;
     @media ${theme.media.tablet} {
-        display: none;
+        display: block;
     }
 `
 

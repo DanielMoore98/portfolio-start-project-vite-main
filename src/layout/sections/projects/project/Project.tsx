@@ -1,10 +1,11 @@
 import styled from "styled-components";
 import {theme} from "../../../../styles/Theme.ts";
-import gitIcon from  "../../../../assets/images/svg/github-icon.svg"
+import gitIcon from "../../../../assets/images/svg/github-icon.svg"
+import {font} from "../../../../styles/Common.ts";
 
 type ProjectPropsType = {
-    text:string
-    src:string
+    text: string
+    src: string
 }
 
 export const Project = (props: ProjectPropsType) => {
@@ -30,20 +31,30 @@ const StyledProject = styled.div`
     border: 4px solid transparent;
     background: linear-gradient(#262c4d, #262c4d 0) padding-box,
     linear-gradient(90deg, rgba(32, 236, 211, 1), rgba(13, 84, 190, 1)) border-box;
-    
+
+    @media ${theme.media.tablet} {
+        border: 2px solid transparent;
+        min-height: unset;
+        gap:24px;
+    }
 
 `
 const Image = styled.img`
     width: 100%;
-    height: 276px;
+    //height: 276px;
+    min-height: 165px;
     object-fit: cover;
+
+    @media ${theme.media.tablet} {
+        margin-top: -2px;
+        width: 101%;
+    }
 `
 
 const Text = styled.p`
-    font-weight: 400;
-    font-size: 16px;
+    ${font({weight: 400,color: theme.colors.font, Fmax: 16, Fmin: 14})};
     text-align: center;
-    color: ${theme.colors.font};
+    
 `
 
 const Link = styled.button`

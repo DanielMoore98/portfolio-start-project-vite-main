@@ -18,7 +18,8 @@ export const Projects = () => {
                     Projects
                 </SectionTitle>
                 <Text>A select number of projects</Text>
-                <FlexWrapper justify={"space-around"} align={"flex-start"} wrap={"wrap"}>
+                <MobileText>Some of my projects include:</MobileText>
+                <FlexWrapper justify={"space-around"} align={"flex-start"} wrap={"wrap"} gap={"40px"}>
                     <Project text={"Made a social media manager template using HTML 5, CSS and JS."}
                              src={img1}/>
                     <Project text={"Made a simple card page using HTML 5 and  CSS 3"}
@@ -34,6 +35,18 @@ export const Projects = () => {
 const StyledProjects = styled.section`
     background-color: ${theme.colors.tertiaryBg};
     padding: 30px 0 40px;
+    
+    @media ${theme.media.tablet} {
+        padding: 24px 0 24px;
+        
+        ${SectionTitle}{
+            margin-bottom: 18px;
+        }
+        
+        ${Container}{
+            padding: 0 45px;
+        }
+    }
 `
 
 const Text = styled.p`
@@ -42,4 +55,22 @@ const Text = styled.p`
     font-size: 18px;
     color: rgba(255, 255, 255, 0.87);
     margin-bottom: 24px;
+    
+    @media ${theme.media.tablet} {
+        display: none;
+    }
+`
+
+const MobileText = styled.p`
+    text-align: center;
+    font-weight: 400;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.87);
+    margin-bottom: 24px;
+    display: none;
+
+    @media ${theme.media.tablet} {
+        display: block;
+        margin-bottom: 42px;
+    }
 `
