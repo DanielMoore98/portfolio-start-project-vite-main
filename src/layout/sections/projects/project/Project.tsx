@@ -47,7 +47,7 @@ const Image = styled.img`
 
     @media ${theme.media.tablet} {
         margin-top: -2px;
-        width: 101%;
+        width: 102%;
     }
 `
 

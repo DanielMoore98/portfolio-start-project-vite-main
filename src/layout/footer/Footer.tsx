@@ -67,7 +67,7 @@ const StyledFooter = styled.footer`
     
     @media ${theme.media.mobile} {
         align-items: center;
-        height: 400px;
+        height: 292px;
         ${Container} {
             padding: 0 15px;
             height: 350px;
@@ -77,6 +77,7 @@ const StyledFooter = styled.footer`
         ${FlexWrapper} {
             height: unset;
         }
+        
     }
     
 `
@@ -119,7 +120,6 @@ const SocialWrapper = styled.div`
     ${Text} {
         margin-bottom: 34px;
     }
-    
     
 `
 const GitWrapper = styled.div`

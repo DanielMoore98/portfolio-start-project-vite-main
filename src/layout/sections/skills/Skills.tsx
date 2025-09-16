@@ -71,7 +71,8 @@ const Text = styled.p`
 
 const Photo = styled.img`
     max-width: 512px;
-    height: auto;
+    width: calc((100vw - 360px)/(1440 - 360) * (562 - 250) + 250px);
+    height: calc((100vw - 360px)/(1440 - 360) * (412 - 186) + 186px);
 `
 
 const Group = styled.div`

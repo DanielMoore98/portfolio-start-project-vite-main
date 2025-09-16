@@ -11,7 +11,7 @@ export const Contact = () => {
         <StyledContact id="contact">
             <Container>
                 <SectionTitle>Contact me</SectionTitle>
-                <FlexWrapper justify="space-between" align={"center"} wrap={"wrap"}>
+                <FlexWrapper  align={"center"} wrap={"wrap"} gap={"65px"}>
                     <Photo src={img}></Photo>
                     <StyledForm>
                         <Field placeholder={"Enter email address"}/>
@@ -32,11 +32,32 @@ const StyledContact = styled.section`
     ${SectionTitle} {
         margin-bottom: 30px;
     }
+    
+    @media ${theme.media.tablet} {
+
+        padding: 54px 0 36px;
+
+
+        ${SectionTitle} {
+            margin-bottom: 36px;
+        }
+        
+        ${FlexWrapper} {
+            gap: 36px;
+        }
+        
+        ${Container} {
+            padding: 0 24px;
+        }
+    }
 `
 const Photo = styled.img`
     object-fit: cover;
     max-width: 562px;
-    height: auto;
+    width: calc((100vw - 360px)/(1440 - 360) * (562 - 250) + 250px);
+    height: calc((100vw - 360px)/(1440 - 360) * (412 - 186) + 186px);
+    //height: auto;
+    margin: 0 auto;
 `
 
 const StyledForm = styled.form`
@@ -45,7 +66,8 @@ const StyledForm = styled.form`
     display: flex;
     flex-direction: column;
     gap: 43px;
-
+    margin: 0 auto;
+    
     textarea {
         resize: none;
         height: 158px;
