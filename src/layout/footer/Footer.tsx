@@ -8,7 +8,7 @@ export const Footer = () => {
     return (
         <StyledFooter>
                 <Container padding={"0 110px"}>
-                    <FlexWrapper justify="space-between" wrap={"wrap"} align={"center"}>
+                    <FlexWrapper justify="space-between" wrap={"wrap"} align={"center"} gap={"35px"}>
                         <SocialWrapper>
                             <Text>My social media links:</Text>
                             <SocialList>
@@ -69,8 +69,7 @@ const StyledFooter = styled.footer`
         align-items: center;
         height: 292px;
         ${Container} {
-            padding: 0 15px;
-            height: 350px;
+            padding: 0 28px;
             
         }
         
@@ -88,6 +87,11 @@ const Text = styled.p`
     font-size: 20px;
     color: #fff;
     text-align: left;
+    
+    @media ${theme.media.mobile} {
+        font-size: 18px;
+        font-weight: 400;
+    }
 `
 
 const SocialList = styled.ul`
@@ -119,6 +123,9 @@ const BlueHighlight = styled.span`
 const SocialWrapper = styled.div`
     ${Text} {
         margin-bottom: 34px;
+        @media ${theme.media.mobile} {
+            margin-bottom: 12px;
+        }
     }
     
 `
@@ -130,9 +137,17 @@ const GitWrapper = styled.div`
     
     ${Text} {
         margin-bottom: 19px;
+        @media ${theme.media.mobile} {
+            margin-bottom: 12px;
+        }
     }
     
     svg {
         margin-right: 10px;
+    }
+    
+    @media ${theme.media.mobile} {
+        align-items: unset;
+        
     }
 `
